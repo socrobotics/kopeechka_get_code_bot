@@ -1,6 +1,5 @@
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart
-from aiogram.utils.markdown import hbold
 
 from loader import dp
 
