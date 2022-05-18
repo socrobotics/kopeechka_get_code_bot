@@ -23,6 +23,8 @@ async def bot_echo(message: types.Message):
         await message.reply(f'{message.from_user.first_name}, я тут только за тем чтобы поработать!\n'
                             f'Отправляй мне пожалуйста то что я говорю! Спасибо 😂')
 
+        await message.answer(f'Для начала работы, отправь мне пожалуйста твой <b>ТОКЕН</> от сервиса kopeechka.store')
+
     if len(text) == 32:
         token.append(text)
         await message.reply(f'Спасибо я получил твой токен - {text}\n\n'

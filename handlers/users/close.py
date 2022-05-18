@@ -12,7 +12,7 @@ async def close_app(message: types.Message):
 
 
 @dp.message_handler(Text(contains="Получить еще один код"))
-async def close_app(message: types.Message):
+async def get_code_again(message: types.Message):
     await message.answer(f"Я перезапустился\n"
-                         f"Отправь мне email, на который хочешь получить код\n"
-                         f"До новых встреч!✋", reply_markup=types.ReplyKeyboardRemove())
+                         f"Отправь мне email, на который хочешь получить код\n",
+                         reply_markup=types.ReplyKeyboardRemove())
